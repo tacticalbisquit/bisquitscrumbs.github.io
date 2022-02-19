@@ -1,0 +1,198 @@
+
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 2.9rem;
+    font-weight: bolder;
+    text-shadow: #1b1b1b 2px 2px;
+}
+
+h2 {
+    font-family: 'Indie Flower', monospace;
+    font-size: 1.5rem;
+    
+}
+
+h3 {
+    font-family: 'VT323', monospace;
+    font-size: larger;
+    font-weight: bold;
+    
+}
+
+a h3 {
+    color: #ff8f00;
+    border: 2px solid #ff8f00;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: aqua;
+    background-color: green;
+}
+
+a:visited {
+    color: green;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    line-height: 1.5;
+}
+
+.squiggle {
+    font-family: 'Indie Flower';
+    font-size: x-large;
+    line-height: 1.25;
+}
+
+span {
+    font-family: 'Indie Flower', monospace;
+}
+.welcome {
+    text-align: center;
+    color: #ff8f00;
+    background-color: black;
+    background-image: linear-gradient(rgba(114, 85, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://www.teahub.io/photos/full/131-1310575_iphone-cute-halloween-background.jpg');
+    height: 325px;
+}
+
+#headtext {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 100px;
+    background-color: hsla(146, 50%, 36%, 0);
+    border-radius: 200px;
+    margin: 5px;
+    line-height: 1.2;
+    
+}
+
+button {
+    font-size: medium;
+    margin: 10px 0 0 0;
+}
+
+.sectiontitle {
+    text-align: center;
+    color: #ff8f00;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.htmlstructure {
+    background-color: #1b1b1b;
+    padding: 20px;
+    border: 2px inset orange;
+}
+
+.htmltables {
+    background-color: #1b1b1b;
+    padding: 20px;
+    
+}
+
+#tablebox {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    vertical-align: top;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 25px;
+    padding: 25px;
+    height: 300px;
+    width: auto;
+    margin: 10px
+    
+}
+
+#table {
+    padding: 20px;
+    border: 5px solid orange;
+    border-radius: 25px;
+}
+
+
+th {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid orange;
+
+}
+
+th:hover {
+    background-color: #ff8f00;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid orange;
+}
+
+td:hover {
+    background-color: lightsalmon;
+}
+
+#tablecode {
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    padding: 25px;
+    height: 300px;
+    overflow-y: scroll;
+    width: auto;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    vertical-align: top;
+    scroll-behavior: smooth;
+}
+
+#tablecode p {
+    border: 5px solid orange;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#tablecode p:hover {
+    background-color: grey;
+}
+
+#tablestyle {
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    padding: 25px;
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#tablestyle p {
+    border: 5px solid orange;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#tablestyle p:hover {
+    background-color: grey;
+}
+
+#tableexplain {
+    color: white;
+    text-align: justify;
+    padding: 20px;
+}

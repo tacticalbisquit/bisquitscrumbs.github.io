@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisquit's Crumbs</title>
+    <link rel="stylesheet" href="./styleClear.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="welcome">
+        <div id="headtext">
+            <h1>Welcome To Bisquit's <s>Cheat</s> <span>crumb</span> Sheet</h1>
+            <h2>currently covering html/css and soon to be organized &lt; maybe &gt;</h2>
+            <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank"><h3>CSS Style Reset Sheet</h3></a>
+        </div>
+        
+    </section>
+
+    <section class="htmlstructure">
+        <h3 class="sectiontitle">structure</h3>
+        <div id="tablecode">
+            <h3>&lt; html &gt;</h3>
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                    &ensp;&lt;head&gt;<br>
+                        &emsp;&lt;title&gt;Website Title&lt;/title&gt;<br>
+                    &ensp;&lt;/head&gt;<br>
+                    &ensp;&lt;body&gt;<br>
+                        &emsp;&lt;p&gt;Makin' Bisquits&lt;/p&gt;<br>
+                        &emsp;&lt;footer&gt;<br>
+                            &emsp;&emsp;&lt;Website Footer&gt;<br>
+                        &emsp;&lt;/footer&gt;<br>
+                    &ensp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </p>
+        </div>
+        <div id="tablestyle">
+            <h3>{ css }</h3>
+            <p>
+                h1 {<br>
+                    font-family: VT232;<br>
+                    font-weight: bold;<br>
+                }<br>
+                <br>
+                .class {<br>
+                    display: inline-block;<br>
+                    background-color: #1b1b1b;<br>
+                }<br>
+                <br>
+                #id {<br>
+                    color: orange;<br>
+                    text-align: center;<br>
+                }
+            </p>
+        </div>
+        <div id="tableexplain">
+            <p class="squiggle">Here is some basic boilerplate html and a mini example of css structure. If we take a look at the structure of html, it's pretty comparable to word or google docs. Reading from top to bottom, we see the doc type declaration and language (html) declaration. Beneath that we have our header, not unlike the header you'd find in word. Within that is the title of the website, this is what appears in your broswers tab.</p>
+        </div>
+
+    </section>
+
+    <section class="htmltables">
+        <h3 class="sectiontitle">Tables</h3>
+        <div id="tablebox">
+            <table id="table">
+                <thead><h3>Header</h3></thead>
+                <tbody>
+                    <tr>
+                        <th>Col. Title</th>
+                        <th>Col. Title</th>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tablecode">
+            <h3>&lt; html &gt;</h3>
+            <p>&lt;table id="table"&gt;<br>
+                &ensp;&lt;thead&gt;&lt;h3&gt;Header&lt;/h3&gt;&lt;/thead&gt;<br>
+                &ensp;&lt;tbody&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                        &ensp;&emsp;&lt;th&gt;Col. Title&lt;/th&gt;<br>
+                        &ensp;&emsp;&lt;th&gt;Col. Title&lt;/th&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                        &ensp;&emsp;&lt;td&gt;Data&lt;/td&gt;<br>
+                        &ensp;&emsp;&lt;td&gt;Data&lt;/td&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                        &ensp;&emsp;&lt;td&gt;Data&lt;/td&gt;<br>
+                        &ensp;&emsp;&lt;td&gt;Data&lt;/td&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                        &ensp;&emsp;&lt;td&gt;Data&lt;/td&gt;<br>
+                        &ensp;&emsp;&lt;td&gt;Data&lt;/td&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                &ensp;&lt;/tbody&gt;<br>
+            &lt;/table&gt;</p>
+        </div>
+        <div id="tablestyle">
+            <h3>{ css }</h3>
+            <p>
+                #table {<br>
+                    &emsp;padding: 20px;<br>
+                    &emsp;border: 5px solid orange;<br>
+                    &emsp;border-radius: 25px;<br>
+                }<br>
+                <br>
+                th {<br>
+                    &emsp;padding: 10px;<br>
+                    &emsp;text-align: center;<br>
+                    &emsp;border: 2px solid orange;<br>
+                }<br>
+                <br>
+                th:hover {<br>
+                    &emsp;background-color: #ff8f00;<br>
+                }<br>
+                <br>
+                td {<br>
+                    &emsp;padding: 10px;<br>
+                    &emsp;text-align: center;<br>
+                    &emsp;border: 2px solid orange;<br>
+                }<br>
+                <br>
+                td:hover {<br>
+                    &emsp;background-color: lightsalmon;<br>
+                }
+            </p>
+        </div>
+        <div id="tableexplain">
+            <p class="squiggle">Tables are a great way to start conceptualizing and practicing html. In fact, when I was just a wee ball of dough, I made some sites using only images and tables. This was all before the glorious invention of CSS. If you take a look at the above html code and think back to how html structure works, it can be pretty easy to decipher what's going on here.</p>
+        </div>
+    </section>
+
+</body>
+</html>
