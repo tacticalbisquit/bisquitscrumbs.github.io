@@ -14,7 +14,7 @@
         <div id="headtext">
             <h1>Welcome To Bisquit's <s>Cheat</s> <span>crumb</span> Sheet</h1>
             <h2>currently covering html/css and soon to be organized &lt; maybe &gt;</h2>
-            <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank"><h3>CSS Style Reset Sheet</h3></a>
+            <a class="sbut" href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">CSS Style Reset Sheet</a>
         </div>
         
     </section>
@@ -156,6 +156,116 @@
         </div>
         <div id="tableexplain">
             <p class="squiggle">Tables are a great way to start conceptualizing and practicing html. In fact, when I was just a wee ball of dough, I made some sites using only images and tables. This was all before the glorious invention of CSS. If you take a look at the above html code and think back to how html structure works, it can be pretty easy to decipher what's going on here.</p>
+        </div>
+    </section>
+    <section class="access">
+        <h3 class="sectiontitle">accessability</h3>
+        <div id="accessbox">
+            <table id="accesstable">
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt; article &gt;</td>
+                    <td>this defines which portions of the page contain the bulk of information</td>
+                </tr>
+                <tr>
+                    <td>title=""</td>
+                    <td>Can be used to give tooltips to links.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="buttons">
+        <h3 class="sectiontitle">buttons</h3>
+        <div id="buttonbox">
+            <a class="sbut" href="" title="This is just an example">Skeuomorphic</a>
+            <a class="fbut" href="" title="Again, just an example.">flat</a>
+        </div>
+        <div id="tablecode">
+            <h3>&lt; html &gt;</h3>
+            <p>
+                &lt;a class="sbut" href="" title="This is just an example"&gt;Skeuomorphic&lt;/a&gt;<br>
+                <br>
+                &lt;a class="fbut" href="" title="Again, just an example."&gt;flat&lt;/a&gt;
+            </p>
+        </div>
+        <div id="tablestyle">
+            <h3>{ css }</h3>
+            <p>
+                .sbut {<br>
+                    color: black;<br>
+                    border: 2px inset green;<br>
+                    background-color: #ff8f00;<br>
+                    border-radius: 5px;<br>
+                    padding: 10px;<br>
+                    box-shadow: 0px 5px;<br>
+                    text-decoration: none;<br>
+                    font-family: 'VT323', monospace;<br>
+                    font-size: 2rem;<br>
+                    font-weight: bold;<br>
+                    letter-spacing: 0.15em;<br>
+                    display: inline-block;<br>
+                    margin: 10px;<br>
+                }<br>
+                <br>
+                .sbut:visited {<br>
+                    color: black;<br>
+                    border: 2px solid green;<br>
+                    background-color: #ff8f00;<br>
+                    border-radius: 5px;<br>
+                    padding: 10px;<br>
+                    box-shadow: 0px 5px;<br>
+                }<br>
+                <br>
+                .sbut:hover {<br>
+                    box-shadow: 0px 2px;<br>
+                    background-color: green;<br>
+                }<br>
+                <br>
+                .sbut:active {<br>
+                    box-shadow: 0px 0px;<br>
+                    background-color: aqua;<br>
+                }<br>
+                <br>
+                .fbut {<br>
+                    color: orange;<br>
+                    border: 2px solid orange;<br>
+                    background-color: hsla(0, 0%, 0%, .5);<br>
+                    border-radius: 5px;<br>
+                    padding: 10px;<br>
+                    text-decoration: none;<br>
+                    font-family: 'Indie Flower', monospace;<br>
+                    font-size: 2rem;<br>
+                    font-weight: bold;<br>
+                    letter-spacing: 0.15em;<br>
+                    display: inline-block;<br>
+                    margin: 10px;<br>
+                }<br>
+                <br>
+                .fbut:visited {<br>
+                    color: orange;<br>
+                    border: 2px solid orange;<br>
+                    background-color: hsla(0, 0%, 0%, .5);<br>
+                    border-radius: 5px;<br>
+                    padding: 10px;<br>
+                    text-decoration: none;<br>
+                    font-family: 'Indie Flower', monospace;<br>
+                    font-size: 2rem;<br>
+                    font-weight: bold;<br>
+                    letter-spacing: 0.15em;<br>
+                    display: inline-block;<br>
+                }<br>
+                <br>
+                .fbut:hover {<br>
+                    background-color: black;<br>
+                    text-indent: 5%;<br>
+                }
+            </p>
+        </div>
+        <div id="tableexplain">
+            <p class="squiggle">A quick note that these are link or anchor &lt;a&gt; buttons crafted using css, and not form buttons &lt;button&gt;. Buttons are important for guiding your users to properly use your links. Skeuomorphic refers to the design and how it looks almost like a button in real life. These are typically best because they are universally recognized as usable buttons. Flat buttons take on the concept that people have been using the web or your site long enough and understand the flow of how things work.</p>
         </div>
     </section>
 
