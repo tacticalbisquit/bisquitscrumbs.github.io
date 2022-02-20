@@ -70,6 +70,7 @@ span {
     background-color: black;
     background-image: linear-gradient(rgba(114, 85, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://www.teahub.io/photos/full/131-1310575_iphone-cute-halloween-background.jpg');
     height: auto;
+    background-position: center;
 
 }
 
@@ -165,8 +166,9 @@ span {
     border-radius: 25px;
     padding: 25px;
     height: 300px;
-    width: auto;
-    margin: 10px
+    width: 28%;
+    margin: 10px auto;
+    
     
 }
 
@@ -174,6 +176,8 @@ span {
     padding: 20px;
     border: 5px solid orange;
     border-radius: 25px;
+    width: 50%;
+    margin: auto;
 }
 
 
@@ -183,6 +187,8 @@ th {
     border: 2px solid orange;
     font-weight: bold;
     color: white;
+    width: 50%;
+    margin: auto;
 
 }
 
@@ -208,8 +214,8 @@ td:hover {
     padding: 25px;
     height: 300px;
     overflow-y: scroll;
-    width: auto;
-    margin: 10px;
+    width: 28%;
+    margin: 10px auto;
     display: inline-block;
     position: relative;
     z-index: 2;
@@ -233,8 +239,8 @@ td:hover {
     border-radius: 25px;
     padding: 25px;
     height: 300px;
-    width: auto;
-    margin: 10px;
+    width: 28%;
+    margin: 10px auto;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -286,8 +292,8 @@ td:hover {
     border-radius: 25px;
     padding: 25px;
     height: 300px;
-    width: auto;
-    margin: 10px
+    width: 28%;
+    margin: 10px auto;
     
 }
 
