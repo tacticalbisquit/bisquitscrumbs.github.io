@@ -10,16 +10,42 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <header id="navigation">
+        <ul>
+            <li><a class="ssbut" href="about.html">MORE/ABOUT</a></li>
+            <li><a class="ffbut" href="#1">structure</a></li>
+            <li><a class="ffbut" href="#2">lists</a></li>
+            <li><a class="ffbut" href="#3">tables</a></li>
+            <li><a class="ffbut" href="#4">accessibility</a></li>
+            <li><a class="ffbut" href="#5">buttons</a></li>
+            <li><a class="ffbut" href="#6">breadcrumbs</a></li>
+        </ul>
+    </header>
+
     <section class="welcome">
         <div id="headtext">
             <h1>Welcome To Bisquit's <s>Cheat</s> <span>crumb</span> Sheet</h1>
             <h2>currently covering html/css and soon to be organized &lt; maybe &gt;</h2>
-            <a class="sbut" href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">CSS Style Reset Sheet</a>
         </div>
         
     </section>
+    <section class="resources">
+        <h3 class="sectiontitle">resources</h3>
+        <p class="squiggle">Before we get started, I figured I'd list some awesome resources that are super helpful and can explain things far better than me.</p>
+        <table>
+            <tr>
+                <td><a class="ssbut" href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">CSS Style Reset Sheet</a></td>
+                <td><p class="squiggle">This is a neat code that resets the styling of your site!</p></td>
+            </tr>
+            <tr>
+                <td><a class="ssbut" href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></td>
+                <td>Amazing reference and guide for everytinhg html, css, js, and more!</td>
+            </tr>
+        </table>
+    
+    </section>
 
-    <section class="htmlstructure">
+    <section class="htmlstructure" id="1">
         <h3 class="sectiontitle">structure</h3>
         <div id="tablecode">
             <h3>&lt; html &gt;</h3>
@@ -62,8 +88,62 @@
         </div>
 
     </section>
+    <section class="lists" id="2">
+        <h3 class="sectiontitle">lists</h3>
+        <div id="tablebox">
+            <p class="squiggle">I need...</p>
+            <ul>
+                <li>eggs</li>
+                <li>bacon</li>
+                <li>flour</li>
+            </ul>
+            <br>
+            <h3>Best Breakfast Food</h3>
+            <ol>
+                <li>Bisquits</li>
+                <li>Bacon</li>
+                <li>Pancakes</li>
+            </ol>
+        </div>
+        <div id="tablecode">
+            <h3>&lt; html &gt;</h3>
+            <p>
+                &lt;p&gt;I need...&lt;/p&gt;<br>
+                &lt;ul&gt;<br>
+                    &lt;li&gt;eggs&lt;/li&gt;<br>
+                    &lt;li&gt;bacon&lt;/li&gt;<br>
+                    &lt;li&gt;flour&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
+                <br>
+                &lt;h3&gt;Best Breakfast Food&lt;/h3&gt;<br>
+                &lt;ol&gt;<br>
+                    &lt;li&gt;Bisquits&lt;/li&gt;<br>
+                    &lt;li&gt;Bacon&lt;/li&gt;<br>
+                    &lt;li&gt;Pancakes&lt;/li&gt;<br>
+                &lt;/ol&gt;
+            </p>
+        </div>
+        <div id="tablestyle">
+            <h3>{ css }</h3>
+            <p>
+                .lists ul {<br>
+                    list-style: circle;<br>
+                    font-family: 'Indie Flower';<br>
+                    line-height: 1.5rem;<br>
+                }<br>
+                <br>
+                .lists ol {<br>
+                    font-family: "VT323";<br>
+                    line-height: 1.5rem;<br>
+                }
+            </p>
+        </div>
+        <div id="tableexplain">
+            <p class="squiggle">Lists come in two flavors: ordered and unordered. This is much like any list youd make in say word or google docs. Ordered lists are just that, they're ordered and usually are indicated with numbers or letters. Unordered lists are obviously the opposite, and are indicared by bullets or other similar symbols.</p>
+        </div>
+    </section>
 
-    <section class="htmltables">
+    <section class="htmltables" id="3">
         <h3 class="sectiontitle">Tables</h3>
         <div id="tablebox">
             <table id="table">
@@ -158,26 +238,30 @@
             <p class="squiggle">Tables are a great way to start conceptualizing and practicing html. In fact, when I was just a wee ball of dough, I made some sites using only images and tables. This was all before the glorious invention of CSS. If you take a look at the above html code and think back to how html structure works, it can be pretty easy to decipher what's going on here.</p>
         </div>
     </section>
-    <section class="access">
+    <section class="access" id="4">
         <h3 class="sectiontitle">accessability</h3>
         <div id="accessbox">
             <table id="accesstable">
                 <tr>
                     <th>Element</th>
-                    <th>Description</th>
+                    <th class="squiggle">Description</th>
                 </tr>
                 <tr>
                     <td>&lt; article &gt;</td>
-                    <td>this defines which portions of the page contain the bulk of information</td>
+                    <td class="squiggle">this defines which portions of the page contain the bulk of information</td>
                 </tr>
                 <tr>
                     <td>title=""</td>
-                    <td>Can be used to give tooltips to links.</td>
+                    <td class="squiggle">Can be used to give tooltips to links.</td>
+                </tr>
+                <tr>
+                    <td>cursor: pointer;</td>
+                    <td class="squiggle">great for making it extra clear something is a link</td>
                 </tr>
             </table>
         </div>
     </section>
-    <section class="buttons">
+    <section class="buttons" id="5">
         <h3 class="sectiontitle">buttons</h3>
         <div id="buttonbox">
             <a class="sbut" href="" title="This is just an example">Skeuomorphic</a>
@@ -266,6 +350,87 @@
         </div>
         <div id="tableexplain">
             <p class="squiggle">A quick note that these are link or anchor &lt;a&gt; buttons crafted using css, and not form buttons &lt;button&gt;. Buttons are important for guiding your users to properly use your links. Skeuomorphic refers to the design and how it looks almost like a button in real life. These are typically best because they are universally recognized as usable buttons. Flat buttons take on the concept that people have been using the web or your site long enough and understand the flow of how things work.</p>
+        </div>
+    </section>
+    <section class="crumbsec" id="6">
+        <h3 class="sectiontitle">breadcrumbs</h3>
+        <div id="buttonbox">
+            <ul class="breadcrumb">
+                <li><a href="#" title="Don't Click Me">Shop</a></li>
+                <li><a href="#" title="Im Warning You">Grocheries</a></li>
+                <li><a href="#" title="Don't Do It">Bakery</a></li>
+                <li><a href="#" title="Last Chance To Click...">Bisquits</a></li>
+            </ul>
+            <p class="squiggle"><br><br> NOTE: I wouldn't click these,<br> as they'll take you to the top!</p>
+        </div>
+        <div id="tablecode">
+            <h3>&lt; html &gt;</h3>
+            <p>
+                &lt;ul class="breadcrumb"&gt;<br>
+                    &lt;li&gt;&lt;a href="#" title="Don't Click Me"&gt;Shop&lt;/a&gt;&lt;/li&gt;<br>
+                    &lt;li&gt;&lt;a href="#" title="Im Warning You"&gt;Grocheries&lt;/a&gt;&lt;/li&gt;<br>
+                    &lt;li&gt;&lt;a href="#" title="Don't Do It"&gt;Bakery&lt;/a&gt;&lt;/li&gt;<br>
+                    &lt;li&gt;&lt;a href="#" title="Last Chance To Click..."&gt;Bisquits&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </p>
+        </div>
+        <div id="tablestyle">
+            <h3>{ css }</h3>
+            <p>
+                .breadcrumb {<br>
+                    text-align: left;<br>
+                  }<br>
+                  .breadcrumb li {<br>
+                    float: left;<br>
+                  }<br>
+                  <br>
+                  .breadcrumb a {<br>
+                    color: #fff;<br>
+                    background: darkcyan;<br>
+                    text-decoration: none;<br>
+                    position: relative;<br>
+                    height: 30px;<br>
+                    line-height: 30px;<br>
+                    text-align: center;<br>
+                    margin-right: 15px;<br>
+                    padding: 0 5px;<br>
+                  }<br>
+                  <br>
+                  .breadcrumb a::before, .breadcrumb a::after {<br>
+                    content: "";<br>
+                    position: absolute;<br>
+                    border-color: darkcyan;<br>
+                    border-style: solid;<br>
+                    border-width: 15px 5px;<br>
+                  }<br>
+                  <br>
+                  .breadcrumb a::before {<br>
+                    left: -10px;<br>
+                    border-left-color: transparent;<br>
+                  }<br>
+                  <br>
+                  .breadcrumb a::after {<br>
+                    left: 100%;<br>
+                    border-color: transparent;<br>
+                    border-left-color: darkcyan;<br>
+                  }<br>
+                  <br>
+                  .breadcrumb a:hover {<br>
+                    background-color: blue;<br>
+                  }<br><br>
+                  
+                  .breadcrumb a:hover::before {<br>
+                    border-color: blue;<br>
+                    border-left-color: transparent;<br>
+                  }<br>
+                  <br>
+                  .breadcrumb a:hover::after {<br>
+                    border-left-color: blue;<br>
+                  }
+            </p>
+        </div>
+        <div id="tableexplain">
+            <p class="squiggle">Breadcrumbs are a great way to path more complex websites. Thinking of the name and looking back to Hansel & Gretel, it's purpose kind of makes sense: a trail to help users get back. For example, say, in the example above, a user randomly ended up on the 'Bisquits' page, how would they know how ti get around your site? With the link structure above, a user would know that they're in the Bakery section of Grocheries. You might be asking, "why not use those on this site?" These link structes are meant to appear BENEATH the pages main navigation, and are best used for more complex sites, very much unlike this one.</p>
         </div>
     </section>
 
