@@ -45,17 +45,38 @@ p {
     font-family: 'Indie Flower';
     font-size: x-large;
     line-height: 1.25;
+    color: white
 }
 
 span {
     font-family: 'Indie Flower', monospace;
 }
+
+#navigation {
+    background-color: #1b1b1b;
+    width: 100%;
+    position: fixed;
+    
+    z-index: 100;
+}
+
+#navigation li {
+    display: inline;
+}
+
 .welcome {
     text-align: center;
     color: #ff8f00;
     background-color: black;
     background-image: linear-gradient(rgba(114, 85, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://www.teahub.io/photos/full/131-1310575_iphone-cute-halloween-background.jpg');
-    height: 325px;
+    height: auto;
+
+}
+
+.welcome img {
+    border-radius: 75px;
+    height: 100px;
+    width: auto;
 }
 
 #headtext {
@@ -79,28 +100,59 @@ span {
     letter-spacing: .2rem;
 }
 
+.resources {
+    background-color: #1b1b1b;
+    padding: 20px;
+}
+
 .htmlstructure {
     background-color: #2e2e2e;
     padding: 20px;
     border: 2px inset orange;
 }
 
-.htmltables {
+.lists {
     background-color: #1b1b1b;
     padding: 20px;
-    
 }
 
-.access {
+.htmltables {
     background-color: #2e2e2e;
     padding: 20px;
     border: 2px inset orange;
 }
 
-.buttons {
+.access {
     background-color: #1b1b1b;
     padding: 20px;
     
+}
+
+.buttons {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border: 2px inset orange;
+}
+
+.crumbsec {
+    background-color: #1b1b1b;
+    padding: 20px;
+}
+
+.coolpeople {
+    background-color: #1b1b1b;
+    padding: 20px;
+}
+
+.lists ul {
+    list-style: circle;
+    font-family: 'Indie Flower';
+    line-height: 1.5rem;
+}
+
+.lists ol {
+    font-family: "VT323";
+    line-height: 1.5rem;
 }
 
 #tablebox {
@@ -130,6 +182,7 @@ th {
     text-align: center;
     border: 2px solid orange;
     font-weight: bold;
+    color: white;
 
 }
 
@@ -141,6 +194,7 @@ td {
     padding: 10px;
     text-align: center;
     border: 2px solid orange;
+    color: white;
 }
 
 td:hover {
@@ -272,6 +326,41 @@ td:hover {
     background-color: aqua;
 }
 
+.ssbut {
+    color: black;
+    border: 2px inset green;
+    background-color: #ff8f00;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 5px;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    margin: 10px;
+}
+
+.ssbut:visited {
+    color: black;
+    border: 2px solid green;
+    background-color: #ff8f00;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 5px;
+}
+
+.ssbut:hover {
+    box-shadow: 0px 2px;
+    background-color: green;
+}
+
+.ssbut:active {
+    box-shadow: 0px 0px;
+    background-color: aqua;
+}
+
 .fbut {
     color: orange;
     border: 2px solid orange;
@@ -305,3 +394,93 @@ td:hover {
     background-color: black;
     text-indent: 5%;
 }
+
+.ffbut {
+    color: orange;
+    border: 2px solid orange;
+    background-color: hsla(0, 0%, 0%, .5);
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Indie Flower', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    margin: 10px;
+}
+
+.ffbut:visited {
+    color: orange;
+    border: 2px solid orange;
+    background-color: hsla(0, 0%, 0%, .5);
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Indie Flower', monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    display: inline-block;
+}
+
+.ffbut:hover {
+    background-color: black;
+    text-indent: 5%;
+}
+
+.breadcrumb {
+    text-align: left;
+  }
+  .breadcrumb li {
+    float: left;
+  }
+  
+  .breadcrumb a {
+    color: #000;
+    background: orange;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 10px;
+    
+  }
+  
+  .breadcrumb a::before, .breadcrumb a::after {
+    content: "";
+    position: absolute;
+    border-color: orange;
+    border-style: solid;
+    border-width: 15px 5px;
+  }
+  
+  .breadcrumb a::before {
+    left: -10px;
+    border-left-color: transparent;
+  }
+  
+  .breadcrumb a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: orange;
+  }
+  
+  .breadcrumb a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .breadcrumb a:hover::before {
+    border-color: black;
+    border-left-color: transparent;
+    color: white;
+  }
+  
+  .breadcrumb a:hover::after {
+    border-left-color: black;
+    color: white;
+  }
